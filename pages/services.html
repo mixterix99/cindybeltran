@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Lorena Beltran</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <style>
+
+        nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px; /* Grosor de la línea */
+    background: currentColor;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%; /* Ancho de la línea cuando se pasa el mouse */
+}
+.title-gradient {
+    background: linear-gradient(90deg, #4a4a4a, #d4af37, #4a4a4a);
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s infinite linear;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.social-icons {
+    right: 10px; /* Ajusta este valor para mover los íconos más o menos hacia la izquierda */
+}
+
+.metallic-text {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Oculta el brillo que sobresalga */
+}
+
+.metallic-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%; /* Más ancho para que el brillo recorra toda la palabra */
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+    animation: metallicEffect 3s infinite linear;
+}
+
+@keyframes metallicEffect {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Contorno negro en el texto */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra negra alrededor del texto */
+}
+
+/* Transición del botón */
+.group:hover .opacity-0 {
+    opacity: 1 !important; /* Forzar visibilidad del botón en hover */
+}
+
+.group:hover .opacity-100 {
+    opacity: 0 !important; /* Asegurar que la capa de texto se oculte */
+}
+
+
+a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+@keyframes falling-text {
+        0% {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* Animación para el subtítulo subiendo */
+    @keyframes rising-text {
+        0% {
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* Clases para aplicar las animaciones */
+    .animate-falling {
+        animation: falling-text 1s ease-out forwards;
+    }
+
+    .animate-rising {
+        animation: rising-text 1s ease-out forwards;
+        animation-delay: 0.5s; /* Retraso para que aparezca después del título */
+        opacity: 0; /* Estado inicial oculto */
+    }
+    @keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+[data-animate] {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.card-animate.active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-animate {
+    opacity: 0;
+    transform: translateY(20px); /* Empieza ligeramente abajo */
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-animate.active {
+    opacity: 1;
+    transform: translateY(0); /* Mueve el footer a su posición original */
+}
+
+
+    </style>
+</head>
+<body class="bg-gray-100">
+<!-- Mini Header -->
+<div class="bg-gray-200 text-gray-600 py-1 text-sm">
+    <div class="container mx-auto flex justify-center items-center space-x-20">
+        <div class="flex items-center space-x-2">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Calle 15 No. 3-23 Local 6 Conjunto Dalí, <span class="font-bold text-gray-800">Pitalito, Huila</span></span>
+        </div>
+        <div class="flex items-center space-x-2">
+            <i class="fas fa-phone"></i>
+            <span>+57 3156386925</span>
+        </div>
+        <div class="flex items-center space-x-2">
+            <i class="fas fa-envelope"></i>
+            <span>consultoriominterna@outlook.com</span>
+        </div>
+    </div>
+</div>
+
+
+<!-- Header Principal -->
+<header class="bg-yellow-400 text-white py-3 shadow-lg">
+    <div class="container mx-auto flex items-center justify-between">
+        <!-- Contenedor de la imagen y el texto -->
+        <div class="flex flex-col items-center text-center space-y-1">
+            <img src="images/logo.png" alt="Logo" class="w-12 h-12  hover:scale-110 transition-transform duration-300 hover:ring-opacity-70">
+            <p class="text-white font-bold text-sm">Dra. Lorena Beltran</p>
+        </div>
+        
+        <!-- Navegación -->
+        <nav class="flex space-x-12">
+            <a href="#inicio" class="uppercase text-white no-underline font-bold text-lg hover:text-gray-800 relative group">Inicio</a>
+            <a href="about.html" class="uppercase text-white no-underline font-bold text-lg hover:text-gray-800 relative group">Acerca de mí</a>
+            <a href="#servicios" class="uppercase text-white no-underline font-bold text-lg hover:text-gray-800 relative group">Servicios</a>
+            <a href="#testimonios" class="uppercase text-white no-underline font-bold text-lg hover:text-gray-800 relative group">Testimonios</a>
+        </nav>
+
+        <!-- Botón Reservar Cita -->
+        <a href="#contacto" class="border-2 border-white no-underline uppercase bg-green-500 hover:bg-green-600 text-xl text-white font-bold py-2 px-4 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 transition-transform duration-300">
+            Reservar Cita
+        </a>
+    </div>
+</header>
+<section class="text-center my-12">
+    <!-- Título con animación de caída -->
+    <h1 class="text-6xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-300 text-transparent bg-clip-text animate-falling">
+        PORTAFOLIO DE SERVICIOS
+    </h1>
+
+    <!-- Subtítulo con animación desde abajo -->
+    <h2 class="text-2xl font-bold text-gray-500 animate-rising mt-2">
+        Descubre nuestros servicios diseñados para cuidar de tu bienestar y el de tus seres queridos
+    </h2>
+</section>
+
+<div class="social-icons fixed top-1/2 right-0 transform -translate-y-1/2 space-y-4 z-50">
+    <a href="#" class="block hover:scale-110 transition-transform duration-200">
+        <img src="images/whatsapp.webp" alt="WhatsApp" class="w-12">
+    </a>
+    <a href="#" class="block hover:scale-110 transition-transform duration-200">
+        <img src="images/instagram.png" alt="Instagram" class="w-12">
+    </a>
+    <a href="#" class="block hover:scale-110 transition-transform duration-200">
+        <img src="images/facebook.webp" alt="Facebook" class="w-12">
+    </a>
+</div>
+
+<section class="py-12 bg-gray-100">
+    <div class="container mx-auto flex flex-col items-center space-y-8">
+        <!-- Tarjeta 1 -->
+        <div class="card-animate flex flex-col md:flex-row items-center border border-gray-300 rounded-lg shadow-md p-4 mb-8 max-w-4xl animate-slide-in-left" data-animate>
+            <!-- Imagen -->
+            <div class="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
+                <img src="images/consulta_general.webp" alt="Consulta General" class="rounded-full shadow-md hover:scale-105 transition-transform">
+            </div>
+
+            <!-- Contenido -->
+            <div class="w-full md:w-2/3 p-4">
+                <h3 class="text-yellow-500 font-bold text-xl mb-2">CONSULTA GENERAL</h3>
+                <ul class="text-gray-600 space-y-2 text-sm">
+                    <li><i class="fas fa-check-circle text-yellow-400"></i> Evaluación general de la salud y diagnóstico inicial.</li>
+                    <li><i class="fas fa-check-circle text-yellow-400"></i> Exámenes físicos rutinarios.</li>
+                    <li><i class="fas fa-check-circle text-yellow-400"></i> Asesoramiento sobre hábitos saludables.</li>
+                </ul>
+
+                <!-- Botones -->
+                <div class="mt-4 flex space-x-4">
+                    <button class="bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-yellow-600 transition-all text-sm">Valor $60.000</button>
+                    <button class="bg-gray-100 text-yellow-500 font-bold py-2 px-4 rounded-lg shadow-md hover:bg-gray-200 transition-all text-sm">Más Información</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repite para cada tarjeta -->
+        <div class="card-animate flex flex-col md:flex-row items-center border border-gray-300 rounded-lg shadow-md p-4 mb-8 max-w-4xl animate-slide-in-left" data-animate>
+            <!-- Imagen -->
+            <div class="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
+                <img src="images/pediatria.webp" alt="Pediatría" class="rounded-full shadow-md hover:scale-105 transition-transform">
+            </div>
+
+            <!-- Contenido -->
+            <div class="w-full md:w-2/3 p-4">
+                <h3 class="text-yellow-500 font-bold text-xl mb-2">PEDIATRÍA</h3>
+                <ul class="text-gray-600 space-y-2 text-sm">
+                    <li><i class="fas fa-check-circle text-yellow-400"></i> Consultas para bebés, niños y adolescentes.</li>
+                    <li><i class="fas fa-check-circle text-yellow-400"></i> Evaluación del crecimiento y desarrollo.</li>
+                    <li><i class="fas fa-check-circle text-yellow-400"></i> Control de vacunas y enfermedades comunes en la infancia.</li>
+                </ul>
+
+                <!-- Botones -->
+                <div class="mt-4 flex space-x-4">
+                    <button class="bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-yellow-600 transition-all text-sm">Valor $80.000</button>
+                    <button class="bg-gray-100 text-yellow-500 font-bold py-2 px-4 rounded-lg shadow-md hover:bg-gray-200 transition-all text-sm">Más Información</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer-animate bg-yellow-500 text-white py-8" data-animate>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Columna 1: Información de contacto -->
+        <div class="text-center md:text-left">
+            <h3 class="text-lg font-bold mb-4 mt-2">Información de contacto</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Calle 15 No. 3-23 Local 6 Conjunto Dalí. Pitalito, Huila</p>
+            <p><i class="fas fa-phone"></i> Teléfono: +57 3156386925</p>
+            <p><i class="fas fa-envelope"></i> Correo: consultoriominterna@outlook.com</p>
+        </div>
+
+        <!-- Columna 2: Horarios de atención -->
+        <div class="text-center">
+            <h3 class="text-lg font-bold mb-4 mt-2">Horarios de Atención</h3>
+            <p><i class="fas fa-clock"></i> Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+            <p>Sábados: 9:00 AM - 1:00 PM</p>
+        </div>
+
+        <!-- Columna 3: Navegación y redes sociales -->
+        <div class="text-center">
+            <ul class="flex flex-col items-center space-y-2">
+                <li><a href="index.html" class="text-white font-bold no-underline hover:underline hover:border-b-2 hover:border-white transition duration-300">Inicio</a></li>
+                <li><a href="about.html" class="text-white font-bold no-underline hover:underline hover:border-b-2 hover:border-white transition duration-300">Acerca de Mí</a></li>
+                <li><a href="#servicios" class="text-white font-bold no-underline hover:underline hover:border-b-2 hover:border-white transition duration-300">Servicios</a></li>
+                <li><a href="#testimonios" class="text-white font-bold no-underline hover:underline hover:border-b-2 hover:border-white transition duration-300">Testimonios</a></li>
+                <li><a href="#contacto" class="text-white font-bold no-underline hover:underline hover:border-b-2 hover:border-white transition duration-300">Separa tu cita</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="text-center mt-8 border-t border-white pt-4 text-sm">
+        &copy; 2024 Dra. Lorena Beltran. Todos los derechos reservados. Pagina realizada por 
+        <a href="https://www.diegopolodev.com" target="_blank" class="text-white font-bold hover:underline">
+            Diego Polo
+        </a>
+    </div>
+</footer>
+
+
+
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper-container', {
+loop: true, // Carrusel infinito
+autoplay: {
+    delay: 5000, // Cambiar cada 5 segundos
+},
+navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+},
+effect: 'fade', // Efecto de desvanecimiento
+fadeEffect: {
+    crossFade: true, // Suaviza la transición
+},
+});
+
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll("[data-animate]");
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                }
+            });
+        },
+        { threshold: 0.2 } // Asegúrate de que el 20% del elemento debe ser visible para activarse
+    );
+
+    elements.forEach((el) => observer.observe(el));
+});
+
+</script>
+
+</body>
+</html>
