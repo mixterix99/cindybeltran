@@ -242,12 +242,12 @@ a:hover {
         <nav class="flex space-x-12">
             <a href="index.html" class="uppercase text-white no-underline font-bold text-lg hover:text-gray-800 relative group">Inicio</a>
             <a href="about.html" class="uppercase text-white no-underline font-bold text-lg hover:text-gray-800 relative group">Acerca de mí</a>
-            <a href="#servicios" class="uppercase text-white no-underline font-bold text-lg hover:text-gray-800 relative group">Servicios</a>
-            <a href="#testimonios" class="uppercase text-white no-underline font-bold text-lg hover:text-gray-800 relative group">Testimonios</a>
+            <a href="services.html" class="uppercase text-white no-underline font-bold text-lg hover:text-gray-800 relative group">Servicios</a>
+            <a href="testimonials.html" class="uppercase text-white no-underline font-bold text-lg hover:text-gray-800 relative group">Testimonios</a>
         </nav>
 
         <!-- Botón Reservar Cita -->
-        <a href="#contacto" class="border-2 border-white no-underline uppercase bg-green-500 hover:bg-green-600 text-xl text-white font-bold py-2 px-4 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 transition-transform duration-300">
+        <a href="https://wa.me/573102631082?text=Hola,%20quisiera%20reservar%20una%20cita%20con%20la%20Dra.%20Cindy" target="_blank" class="border-2 border-white no-underline uppercase bg-green-500 hover:bg-green-600 text-xl text-white font-bold py-2 px-4 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 transition-transform duration-300">
             Reservar Cita
         </a>
     </div>
@@ -391,78 +391,111 @@ a:hover {
             </div>
         </div>
         
-        <div class="card-animate flex flex-col md:flex-row items-center border border-gray-300 rounded-lg shadow-md p-4 mb-8 max-w-6xl mx-auto relative hover:shadow-lg transition-all duration-300" data-animate>
+        <div class="card-animate flex flex-col md:flex-row items-center border border-gray-300 rounded-lg shadow-md p-6 mb-8 w-full max-w-5xl mx-auto relative group hover:shadow-lg transition-all duration-300" data-animate>
             <!-- Imagen -->
             <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0">
-                <img src="images/enfermedades_cronicas.webp" alt="Pediatría" class="rounded-full shadow-md hover:scale-105 transition-transform">
+                <img src="images/lectura_examenes.webp" alt="Lectura de Exámenes" class="rounded-full shadow-md hover:scale-105 transition-transform">
             </div>
-
+        
             <!-- Contenido -->
-            <div class="w-full md:w-2/3 p-4">
-                <h3 class="text-yellow-500 font-bold text-xl mb-2 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 640 512" class="mr-2"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M160 0a64 64 0 1 1 0 128A64 64 0 1 1 160 0zM88 480l0-80-17.8 0c-10.9 0-18.6-10.7-15.2-21.1l31.1-93.4L57.5 323.3c-10.7 14.1-30.8 16.8-44.8 6.2s-16.8-30.7-6.2-44.8L65.4 207c22.4-29.6 57.5-47 94.6-47s72.2 17.4 94.6 47l58.9 77.7c10.7 14.1 7.9 34.2-6.2 44.8s-34.2 7.9-44.8-6.2l-28.6-37.8L265 378.9c3.5 10.4-4.3 21.1-15.2 21.1L232 400l0 80c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-80-16 0 0 80c0 17.7-14.3 32-32 32s-32-14.3-32-32zM480 0a64 64 0 1 1 0 128A64 64 0 1 1 480 0zm-8 384l0 96c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-179.5L395.1 321c-9.4 15-29.2 19.4-44.1 10s-19.4-29.2-10-44.1l51.7-82.1c17.6-27.9 48.3-44.9 81.2-44.9l12.3 0c33 0 63.7 16.9 81.2 44.9L619.1 287c9.4 15 4.9 34.7-10 44.1s-34.7 4.9-44.1-10L552 300.5 552 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-96-16 0z"/></svg> PEDIATRÍA
+            <div class="flex flex-col justify-center items-center w-full md:w-3/4 text-center p-6">
+                <!-- Título -->
+                <h3 class="text-yellow-500 font-bold text-2xl mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 640 512" class="mr-3">
+                        <path fill="#FFD43B" d="M160 0a64 64 0 1 1 0 128A64 64 0 1 1 160 0zM88 480l0-80-17.8 0c-10.9 0-18.6-10.7-15.2-21.1l31.1-93.4L57.5 323.3c-10.7 14.1-30.8 16.8-44.8 6.2s-16.8-30.7-6.2-44.8L65.4 207c22.4-29.6 57.5-47 94.6-47s72.2 17.4 94.6 47l58.9 77.7c10.7 14.1 7.9 34.2-6.2 44.8s-34.2 7.9-44.8-6.2l-28.6-37.8L265 378.9c3.5 10.4-4.3 21.1-15.2 21.1L232 400l0 80c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-80-16 0 0 80c0 17.7-14.3 32-32 32s-32-14.3-32-32zM480 0a64 64 0 1 1 0 128A64 64 0 1 1 480 0zm-8 384l0 96c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-179.5L395.1 321c-9.4 15-29.2 19.4-44.1 10s-19.4-29.2-10-44.1l51.7-82.1c17.6-27.9 48.3-44.9 81.2-44.9l12.3 0c33 0 63.7 16.9 81.2 44.9L619.1 287c9.4 15 4.9 34.7-10 44.1s-34.7 4.9-44.1-10L552 300.5 552 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-96-16 0z" />
+                    </svg>
+                    LECTURA DE EXÁMENES
                 </h3>
-                <ul class="text-gray-600 space-y-2 text-sm">
-                    <li><i class="fas fa-check-circle text-yellow-400"></i> Consultas para bebés, niños y adolescentes.</li>
-                    <li><i class="fas fa-check-circle text-yellow-400"></i> Evaluación del crecimiento y desarrollo.</li>
-                    <li><i class="fas fa-check-circle text-yellow-400"></i> Control de vacunas y enfermedades comunes en la infancia.</li>
-                </ul>
-
+        
+                <!-- Descripción -->
+                <p class="text-gray-700 text-base leading-7 mb-6">
+                    - Análisis detallado de resultados de exámenes médicos.<br>
+                    - Interpretación de imágenes diagnósticas.<br>
+                    - Recomendaciones basadas en los hallazgos para el seguimiento adecuado.
+                </p>
+        
                 <!-- Botones -->
-                <div class="mt-4 flex space-x-4">
-                    <button class="bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-yellow-600 transition-all text-sm">Valor $80.000</button>
-                    <button class="bg-gray-100 text-yellow-500 font-bold py-2 px-4 rounded-lg shadow-md hover:bg-gray-200 transition-all text-sm">Más Información</button>
+                <div class="flex justify-center gap-6">
+                    <button class="bg-yellow-500 text-white font-bold py-3 px-6 rounded-lg shadow-md text-lg hover:bg-yellow-600 transition-all">
+                        Valor $70.000
+                    </button>
+                    <button class="bg-gray-100 text-yellow-500 font-bold py-3 px-6 rounded-lg shadow-md text-lg hover:bg-gray-200 transition-all">
+                        Más Información
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="card-animate flex flex-col md:flex-row items-center border border-gray-300 rounded-lg shadow-md p-4 mb-8 max-w-6xl mx-auto relative hover:shadow-lg transition-all duration-300" data-animate>
+        
+        <div class="card-animate flex flex-col md:flex-row items-center border border-gray-300 rounded-lg shadow-md p-6 mb-8 w-full max-w-5xl mx-auto relative group hover:shadow-lg transition-all duration-300" data-animate>
             <!-- Imagen -->
-            <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0">
-                <img src="images/pediatria.webp" alt="Pediatría" class="rounded-full shadow-md hover:scale-105 transition-transform">
+            <div class="w-40 h-40 md:w-48 md:h-48 flex-shrink-0">
+                <img src="images/lesiones_menores.webp" alt="Atención de Lesiones Menores" class="rounded-full shadow-md hover:scale-105 transition-transform">
             </div>
-
+        
             <!-- Contenido -->
-            <div class="w-full md:w-2/3 p-4">
-                <h3 class="text-yellow-500 font-bold text-xl mb-2 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 640 512" class="mr-2"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M160 0a64 64 0 1 1 0 128A64 64 0 1 1 160 0zM88 480l0-80-17.8 0c-10.9 0-18.6-10.7-15.2-21.1l31.1-93.4L57.5 323.3c-10.7 14.1-30.8 16.8-44.8 6.2s-16.8-30.7-6.2-44.8L65.4 207c22.4-29.6 57.5-47 94.6-47s72.2 17.4 94.6 47l58.9 77.7c10.7 14.1 7.9 34.2-6.2 44.8s-34.2 7.9-44.8-6.2l-28.6-37.8L265 378.9c3.5 10.4-4.3 21.1-15.2 21.1L232 400l0 80c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-80-16 0 0 80c0 17.7-14.3 32-32 32s-32-14.3-32-32zM480 0a64 64 0 1 1 0 128A64 64 0 1 1 480 0zm-8 384l0 96c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-179.5L395.1 321c-9.4 15-29.2 19.4-44.1 10s-19.4-29.2-10-44.1l51.7-82.1c17.6-27.9 48.3-44.9 81.2-44.9l12.3 0c33 0 63.7 16.9 81.2 44.9L619.1 287c9.4 15 4.9 34.7-10 44.1s-34.7 4.9-44.1-10L552 300.5 552 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-96-16 0z"/></svg> PEDIATRÍA
+            <div class="flex flex-col justify-center items-center w-full text-center p-6">
+                <!-- Título -->
+                <h3 class="text-yellow-500 font-bold text-2xl mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 576 512" class="mr-3">
+                        <path fill="#FFD43B" d="M301.2 3.4C306.1 1.2 311.4 0 316.8 0c16.5 0 32.8 9.2 40.8 25.2L404.2 96H504c39.8 0 72 32.2 72 72 0 11.7-2.8 23.3-8.2 33.6L496 384H80l-71.8-182.4C2.8 191.3 0 179.7 0 168c0-39.8 32.2-72 72-72h100.2l46.2-70.8c9.4-19.2 30.4-29.6 51.6-23.8 9.6 2.5 18.2 8.3 24.4 16.4l6.7 8.9L301.2 3.4zM280 232c0-13.3 10.7-24 24-24s24 10.7 24 24v96c0 13.3-10.7 24-24 24s-24-10.7-24-24v-96zM328 408a24 24 0 1 1-48 0 24 24 0 1 1 48 0zM80 448h416c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                    </svg>
+                    ATENCIÓN DE LESIONES MENORES
                 </h3>
-                <ul class="text-gray-600 space-y-2 text-sm">
-                    <li><i class="fas fa-check-circle text-yellow-400"></i> Consultas para bebés, niños y adolescentes.</li>
-                    <li><i class="fas fa-check-circle text-yellow-400"></i> Evaluación del crecimiento y desarrollo.</li>
-                    <li><i class="fas fa-check-circle text-yellow-400"></i> Control de vacunas y enfermedades comunes en la infancia.</li>
-                </ul>
-
+        
+                <!-- Descripción -->
+                <p class="text-gray-700 text-base leading-7 mb-6">
+                    - Tratamiento de cortes, raspones y quemaduras leves.<br>
+                    - Limpieza y desinfección de heridas superficiales.<br>
+                    - Aplicación de vendajes y cuidados básicos.
+                </p>
+        
                 <!-- Botones -->
-                <div class="mt-4 flex space-x-4">
-                    <button class="bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-yellow-600 transition-all text-sm">Valor $80.000</button>
-                    <button class="bg-gray-100 text-yellow-500 font-bold py-2 px-4 rounded-lg shadow-md hover:bg-gray-200 transition-all text-sm">Más Información</button>
+                <div class="flex justify-center gap-6">
+                    <button class="bg-yellow-500 text-white font-bold py-3 px-6 rounded-lg shadow-md text-lg hover:bg-yellow-600 transition-all">
+                        Valor $50.000
+                    </button>
+                    <button class="bg-gray-100 text-yellow-500 font-bold py-3 px-6 rounded-lg shadow-md text-lg hover:bg-gray-200 transition-all">
+                        Más Información
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="card-animate flex flex-col md:flex-row items-center border border-gray-300 rounded-lg shadow-md p-4 mb-8 max-w-6xl mx-auto relative hover:shadow-lg transition-all duration-300" data-animate>
+        
+        <div class="card-animate flex flex-col md:flex-row items-center border border-gray-300 rounded-lg shadow-md p-6 mb-8 w-full max-w-5xl mx-auto relative group hover:shadow-lg transition-all duration-300" data-animate>
             <!-- Imagen -->
-            <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0">
-                <img src="images/pediatria.webp" alt="Pediatría" class="rounded-full shadow-md hover:scale-105 transition-transform">
+            <div class="w-40 h-40 md:w-48 md:h-48 flex-shrink-0">
+                <img src="images/control_prenatal.webp" alt="Control Prenatal" class="rounded-full shadow-md hover:scale-105 transition-transform">
             </div>
-
+        
             <!-- Contenido -->
-            <div class="w-full md:w-2/3 p-4">
-                <h3 class="text-yellow-500 font-bold text-xl mb-2 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 640 512" class="mr-2"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M160 0a64 64 0 1 1 0 128A64 64 0 1 1 160 0zM88 480l0-80-17.8 0c-10.9 0-18.6-10.7-15.2-21.1l31.1-93.4L57.5 323.3c-10.7 14.1-30.8 16.8-44.8 6.2s-16.8-30.7-6.2-44.8L65.4 207c22.4-29.6 57.5-47 94.6-47s72.2 17.4 94.6 47l58.9 77.7c10.7 14.1 7.9 34.2-6.2 44.8s-34.2 7.9-44.8-6.2l-28.6-37.8L265 378.9c3.5 10.4-4.3 21.1-15.2 21.1L232 400l0 80c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-80-16 0 0 80c0 17.7-14.3 32-32 32s-32-14.3-32-32zM480 0a64 64 0 1 1 0 128A64 64 0 1 1 480 0zm-8 384l0 96c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-179.5L395.1 321c-9.4 15-29.2 19.4-44.1 10s-19.4-29.2-10-44.1l51.7-82.1c17.6-27.9 48.3-44.9 81.2-44.9l12.3 0c33 0 63.7 16.9 81.2 44.9L619.1 287c9.4 15 4.9 34.7-10 44.1s-34.7 4.9-44.1-10L552 300.5 552 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-96-16 0z"/></svg> PEDIATRÍA
+            <div class="flex flex-col justify-center items-center w-full text-center p-6">
+                <!-- Título -->
+                <h3 class="text-yellow-500 font-bold text-2xl mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 576 512" class="mr-3">
+                        <path fill="#FFD43B" d="M432 0c44.2 0 80 35.8 80 80s-35.8 80-80 80-80-35.8-80-80 35.8-80 80-80zM448 288c0-17.7-14.3-32-32-32s-32 14.3-32 32c0 64-128 96-128 96s-128-32-128-96c0-17.7-14.3-32-32-32s-32 14.3-32 32c0 79.5 128.3 112.7 160 120v56c0 35.3 57.3 64 128 64s128-28.7 128-64V408c31.7-7.3 160-40.5 160-120zm-48-24c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm-32 208c-88.4 0-160-28.7-160-64s71.6-64 160-64 160 28.7 160 64-71.6 64-160 64z" />
+                    </svg>
+                    CONTROL PRENATAL
                 </h3>
-                <ul class="text-gray-600 space-y-2 text-sm">
-                    <li><i class="fas fa-check-circle text-yellow-400"></i> Consultas para bebés, niños y adolescentes.</li>
-                    <li><i class="fas fa-check-circle text-yellow-400"></i> Evaluación del crecimiento y desarrollo.</li>
-                    <li><i class="fas fa-check-circle text-yellow-400"></i> Control de vacunas y enfermedades comunes en la infancia.</li>
-                </ul>
-
+        
+                <!-- Descripción -->
+                <p class="text-gray-700 text-base leading-7 mb-6">
+                    - Monitoreo regular de la salud de la madre y el bebé.<br>
+                    - Control de peso, presión arterial y análisis de laboratorio.<br>
+                    - Asesoramiento sobre cuidados durante el embarazo.
+                </p>
+        
                 <!-- Botones -->
-                <div class="mt-4 flex space-x-4">
-                    <button class="bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-yellow-600 transition-all text-sm">Valor $80.000</button>
-                    <button class="bg-gray-100 text-yellow-500 font-bold py-2 px-4 rounded-lg shadow-md hover:bg-gray-200 transition-all text-sm">Más Información</button>
+                <div class="flex justify-center gap-6">
+                    <button class="bg-yellow-500 text-white font-bold py-3 px-6 rounded-lg shadow-md text-lg hover:bg-yellow-600 transition-all">
+                        Valor $120.000
+                    </button>
+                    <button class="bg-gray-100 text-yellow-500 font-bold py-3 px-6 rounded-lg shadow-md text-lg hover:bg-gray-200 transition-all">
+                        Más Información
+                    </button>
                 </div>
             </div>
         </div>
+        
     </div>
 </section>
 
@@ -491,7 +524,7 @@ a:hover {
                 <li><a href="about.html" class="text-white font-bold no-underline hover:underline hover:border-b-2 hover:border-white transition duration-300">Acerca de Mí</a></li>
                 <li><a href="#servicios" class="text-white font-bold no-underline hover:underline hover:border-b-2 hover:border-white transition duration-300">Servicios</a></li>
                 <li><a href="#testimonios" class="text-white font-bold no-underline hover:underline hover:border-b-2 hover:border-white transition duration-300">Testimonios</a></li>
-                <li><a href="#contacto" class="text-white font-bold no-underline hover:underline hover:border-b-2 hover:border-white transition duration-300">Separa tu cita</a></li>
+                <li><a href="https://wa.me/573102631082?text=Hola,%20quisiera%20reservar%20una%20cita%20con%20la%20Dra.%20Cindy" target="_blank" class="text-white font-bold no-underline hover:underline hover:border-b-2 hover:border-white transition duration-300">Separa tu cita</a></li>
             </ul>
         </div>
     </div>
